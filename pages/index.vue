@@ -157,13 +157,13 @@
             <div class="mt-6">
               <div class="apple-experience-item">
                 <h4>Slowdive</h4>
-                <div class="company">Vue.js, Nuxt.js, Go-backend, Kotlin, SwiftUI | 2024</div>
+                <div class="company">Vue.js, Nuxt.js, Go, Kotlin, SwiftUI | 2024</div>
                 <p>A full-featured super-app for psychological well-being, supported by all popular mobile operating systems and boasting thousands of users worldwide.</p>
               </div>
               
               <div class="apple-experience-item">
                 <h4>House Premium</h4>
-                <div class="company">React, TypeScript, Node.js | 2023</div>
+                <div class="company">Kotlin, Go, React, SwiftUI | 2023</div>
                 <p>Premium class housing management system through interaction with remote concierge services and server support.</p>
               </div>
             </div>
