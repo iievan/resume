@@ -1,17 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config';
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: [
-    '~/assets/css/apple-styles.css'
+    '~/assets/css/minimal-styles.css'
   ],
   app: {
     head: {
-      title: 'Иван Ефимов - Frontend Developer',
+      title: 'Hello there!',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Резюме Frontend разработчика Иван Ефимов. Опыт работы с Vue.js, React, TypeScript и современными веб-технологиями.' },
+        { name: 'description', content: 'Резюме Lead QA & Senior Software Engineer Evan E. Опыт работы с JavaScript, TypeScript, Vue.js, Go, SwiftUI и современными технологиями тестирования.' },
         { name: 'theme-color', content: '#007aff' }
       ],
       link: [

@@ -1,0 +1,351 @@
+/* Minimal-inspired styles for resume */
+
+/* Import system font stack */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables for minimal color scheme */
+:root {
+  --minimal-white: #ffffff;
+  --minimal-gray-50: #f9f9f9;
+  --minimal-gray-100: #f2f2f7;
+  --minimal-gray-200: #e5e5ea;
+  --minimal-gray-300: #d1d1d6;
+  --minimal-gray-400: #c7c7cc;
+  --minimal-gray-500: #aeaeb2;
+  --minimal-gray-600: #8e8e93;
+  --minimal-gray-700: #636366;
+  --minimal-gray-800: #48484a;
+  --minimal-gray-900: #1c1c1e;
+  
+  --minimal-blue: #007aff;
+  --minimal-blue-light: #5ac8fa;
+  --minimal-blue-dark: #0051d5;
+  
+  --minimal-green: #34c759;
+  --minimal-orange: #ff9500;
+  --minimal-red: #ff3b30;
+  --minimal-purple: #af52de;
+  
+  --minimal-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --minimal-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.15);
+  
+  --minimal-border-radius: 12px;
+  --minimal-border-radius-large: 20px;
+  
+  --minimal-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--minimal-gray-900);
+  background-color: var(--minimal-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--minimal-gray-900);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 600;
+}
+
+/* Minimal-style container */
+.minimal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .minimal-container {
+    padding: 0 40px;
+  }
+}
+
+/* Minimal-style sections */
+.minimal-section {
+  margin-bottom: 80px;
+}
+
+.minimal-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Minimal-style cards */
+.minimal-card {
+  background: var(--minimal-white);
+  border-radius: var(--minimal-border-radius);
+  box-shadow: var(--minimal-shadow);
+  padding: 32px;
+  transition: var(--minimal-transition);
+  border: 1px solid var(--minimal-gray-200);
+}
+
+.minimal-card:hover {
+  box-shadow: var(--minimal-shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Minimal-style buttons */
+.minimal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: var(--minimal-blue);
+  color: var(--minimal-white);
+  border: none;
+  border-radius: var(--minimal-border-radius);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--minimal-transition);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+.minimal-btn:hover {
+  background: var(--minimal-blue-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 122, 255, 0.4);
+}
+
+.minimal-btn-secondary {
+  background: var(--minimal-gray-100);
+  color: var(--minimal-gray-900);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.minimal-btn-secondary:hover {
+  background: var(--minimal-gray-200);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Minimal-style skill tags */
+.minimal-skill-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--minimal-gray-100);
+  color: var(--minimal-gray-700);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 4px 8px 4px 0;
+  transition: var(--minimal-transition);
+  border: 1px solid var(--minimal-gray-200);
+  cursor: default;
+}
+
+.minimal-skill-tag:hover {
+  background: var(--minimal-blue);
+  color: var(--minimal-white);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+/* Minimal-style header */
+.minimal-header {
+  background: linear-gradient(135deg, var(--minimal-gray-50) 0%, var(--minimal-white) 100%);
+  padding: 120px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--minimal-gray-200);
+}
+
+.minimal-header h1 {
+  color: var(--minimal-gray-900);
+  margin-bottom: 16px;
+}
+
+.minimal-header h2 {
+  color: var(--minimal-gray-600);
+  font-weight: 400;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+
+/* Minimal-style footer */
+.minimal-footer {
+  background: var(--minimal-gray-900);
+  color: var(--minimal-gray-300);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Minimal-style animations */
+@keyframes minimalFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes minimalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.minimal-fade-in {
+  animation: minimalFadeIn 0.8s ease-out;
+}
+
+.minimal-fade-in-up {
+  animation: minimalFadeInUp 0.8s ease-out;
+}
+
+.minimal-fade-in-up-delay-1 {
+  animation: minimalFadeInUp 0.8s ease-out 0.2s both;
+}
+
+.minimal-fade-in-up-delay-2 {
+  animation: minimalFadeInUp 0.8s ease-out 0.4s both;
+}
+
+.minimal-fade-in-up-delay-3 {
+  animation: minimalFadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* Minimal-style contact info */
+.minimal-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--minimal-gray-700);
+}
+
+.minimal-contact strong {
+  color: var(--minimal-gray-900);
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* Minimal-style links */
+.minimal-link {
+  color: var(--minimal-blue);
+  text-decoration: none;
+  transition: var(--minimal-transition);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+
+.minimal-link:hover {
+  color: var(--minimal-blue-dark);
+  border-bottom-color: var(--minimal-blue);
+  transform: translateY(-1px);
+}
+
+.minimal-link:focus {
+  outline: 2px solid var(--minimal-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Minimal-style experience items */
+.minimal-experience-item {
+  border-left: 3px solid var(--minimal-blue);
+  padding-left: 24px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.minimal-experience-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 9px;
+  height: 9px;
+  background: var(--minimal-blue);
+  border-radius: 50%;
+}
+
+.minimal-experience-item h4 {
+  color: var(--minimal-gray-900);
+  margin-bottom: 4px;
+}
+
+.minimal-experience-item .company {
+  color: var(--minimal-gray-600);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.minimal-experience-item p {
+  color: var(--minimal-gray-700);
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .minimal-container {
+    padding: 0 16px;
+  }
+  
+  .minimal-card {
+    padding: 24px;
+  }
+  
+  .minimal-section {
+    margin-bottom: 60px;
+  }
+  
+  .minimal-header {
+    padding: 80px 0;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --minimal-white: #1c1c1e;
+    --minimal-gray-50: #2c2c2e;
+    --minimal-gray-100: #3a3a3c;
+    --minimal-gray-200: #48484a;
+    --minimal-gray-300: #636366;
+    --minimal-gray-400: #8e8e93;
+    --minimal-gray-500: #aeaeb2;
+    --minimal-gray-600: #c7c7cc;
+    --minimal-gray-700: #d1d1d6;
+    --minimal-gray-800: #e5e5ea;
+    --minimal-gray-900: #f2f2f7;
+  }
+  
+  .minimal-header {
+    background: linear-gradient(135deg, var(--minimal-gray-50) 0%, var(--minimal-white) 100%);
+  }
+}
