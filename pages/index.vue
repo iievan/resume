@@ -1,9 +1,9 @@
 <template>
-  <div />
+    <div />
 </template>
 
 <script setup>
 definePageMeta({
-  redirect: '/general/page'
-})
+    redirect: "/general/page",
+});
 </script>

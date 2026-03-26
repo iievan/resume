@@ -1,0 +1,452 @@
+/* Mimalism-inspired styles for resume */
+
+/* Import system font stack */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* CSS Variables for mimalism color scheme */
+:root {
+    --mimalism-white: #ffffff;
+    --mimalism-gray-50: #f9f9f9;
+    --mimalism-gray-100: #f2f2f7;
+    --mimalism-gray-200: #e5e5ea;
+    --mimalism-gray-300: #d1d1d6;
+    --mimalism-gray-400: #c7c7cc;
+    --mimalism-gray-500: #aeaeb2;
+    --mimalism-gray-600: #8e8e93;
+    --mimalism-gray-700: #636366;
+    --mimalism-gray-800: #48484a;
+    --mimalism-gray-900: #1c1c1e;
+
+    --mimalism-blue: #007aff;
+    --mimalism-blue-light: #5ac8fa;
+    --mimalism-blue-dark: #0051d5;
+
+    --mimalism-green: #34c759;
+    --mimalism-orange: #ff9500;
+    --mimalism-red: #ff3b30;
+    --mimalism-purple: #af52de;
+
+    --mimalism-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --mimalism-shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+    --mimalism-border-radius: 12px;
+    --mimalism-border-radius-large: 20px;
+
+    --mimalism-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Section Text Colors */
+    --header-name-color: var(--mimalism-gray-900);
+    --header-titles-color: var(--mimalism-gray-600);
+    --contacts-label-color: var(--mimalism-gray-700);
+    --contacts-value-color: var(--mimalism-gray-600);
+    --skills-label-color: var(--mimalism-gray-700);
+    --skills-tag-color: var(--mimalism-gray-700);
+    --experience-label-color: var(--mimalism-gray-700);
+    --experience-title-color: var(--mimalism-gray-900);
+    --experience-company-color: var(--mimalism-gray-600);
+    --experience-location-color: var(--mimalism-gray-500);
+    --experience-period-color: var(--mimalism-gray-500);
+    --experience-description-color: var(--mimalism-gray-700);
+    --education-label-color: var(--mimalism-gray-700);
+    --education-institution-color: var(--mimalism-gray-600);
+    --education-degree-color: var(--education-institution-color);
+    --projects-label-color: var(--mimalism-gray-700);
+    --projects-name-color: var(--mimalism-gray-900);
+    --projects-technologies-color: var(--mimalism-gray-600);
+    --projects-year-color: var(--mimalism-gray-500);
+    --projects-description-color: var(--mimalism-gray-700);
+    --footer-copyright-color: var(--mimalism-gray-500);
+
+    /* Global Text Colors */
+    --text-primary: var(--mimalism-gray-900);
+    --text-secondary: var(--mimalism-gray-600);
+    --text-muted: var(--mimalism-gray-500);
+}
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        "Inter",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--mimalism-text-color);
+    background-color: var(--mimalism-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--mimalism-gray-900);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    font-weight: 600;
+}
+
+/* Mimalism-style container */
+.mimalism-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+    .mimalism-container {
+        padding: 0 40px;
+    }
+}
+
+/* Mimalism-style sections */
+.mimalism-section {
+    margin-bottom: 80px;
+}
+
+.mimalism-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Mimalism-style cards */
+.mimalism-card {
+    background: var(--mimalism-white);
+    border-radius: var(--mimalism-border-radius);
+    box-shadow: var(--mimalism-shadow);
+    padding: 32px;
+    transition: var(--mimalism-transition);
+    border: 1px solid var(--mimalism-gray-200);
+}
+
+.mimalism-card:hover {
+    box-shadow: var(--mimalism-shadow-hover);
+    transform: translateY(-2px);
+}
+
+/* Mimalism-style buttons */
+.mimalism-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background: var(--mimalism-blue);
+    color: var(--mimalism-white);
+    border: none;
+    border-radius: var(--mimalism-border-radius);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--mimalism-transition);
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+}
+
+.mimalism-btn:hover {
+    background: var(--mimalism-blue-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 122, 255, 0.4);
+}
+
+.mimalism-btn-secondary {
+    background: var(--mimalism-gray-100);
+    color: var(--mimalism-gray-900);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mimalism-btn-secondary:hover {
+    background: var(--mimalism-gray-200);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Mimalism-style skill tags */
+.skills-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.floating-skill {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--mimalism-gray-100);
+    color: var(--mimalism-gray-700);
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition:
+        transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    border: 1px solid var(--mimalism-gray-200);
+    cursor: default;
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+    animation-delay: var(--float-delay, 0s);
+    transform: translate(
+        calc(var(--base-offset-x, 0px) + var(--move-x, 0px)),
+        calc(var(--base-offset-y, 0px) + var(--move-y, 0px))
+    );
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translate(
+            calc(var(--base-offset-x, 0px) + var(--move-x, 0px)),
+            calc(var(--base-offset-y, 0px) + var(--move-y, 0px))
+        );
+    }
+    25% {
+        transform: translate(
+            calc(var(--base-offset-x, 0px) + 2px + var(--move-x, 0px)),
+            calc(var(--base-offset-y, 0px) - 3px + var(--move-y, 0px))
+        );
+    }
+    50% {
+        transform: translate(
+            calc(var(--base-offset-x, 0px) - 2px + var(--move-x, 0px)),
+            calc(var(--base-offset-y, 0px) + 2px + var(--move-y, 0px))
+        );
+    }
+    75% {
+        transform: translate(
+            calc(var(--base-offset-x, 0px) + 3px + var(--move-x, 0px)),
+            calc(var(--base-offset-y, 0px) + 1px + var(--move-y, 0px))
+        );
+    }
+}
+
+.floating-skill:hover {
+    background: var(--mimalism-blue);
+    color: var(--mimalism-white);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 122, 255, 0.4);
+    z-index: 10;
+    animation: none;
+}
+
+/* Mimalism-style header */
+.mimalism-header {
+    background: linear-gradient(
+        135deg,
+        var(--mimalism-gray-50) 0%,
+        var(--mimalism-white) 100%
+    );
+    padding: 120px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--mimalism-gray-200);
+}
+
+.mimalism-header h1 {
+    color: var(--mimalism-gray-900);
+    margin-bottom: 16px;
+}
+
+.mimalism-header h2 {
+    color: var(--mimalism-gray-600);
+    font-weight: 400;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+
+/* Mimalism-style footer */
+.mimalism-footer {
+    background: linear-gradient(
+        135deg,
+        var(--mimalism-gray-50) 0%,
+        var(--mimalism-white) 100%
+    );
+    color: var(--mimalism-gray-600);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid var(--mimalism-gray-200);
+    position: relative;
+    z-index: 1;
+}
+
+/* Mimalism-style animations */
+@keyframes mimalismFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mimalismFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mimalism-fade-in {
+    animation: mimalismFadeIn 0.8s ease-out;
+}
+
+.mimalism-fade-in-up {
+    animation: mimalismFadeInUp 0.8s ease-out;
+}
+
+.mimalism-fade-in-up-delay-1 {
+    animation: mimalismFadeInUp 0.8s ease-out 0.2s both;
+}
+
+.mimalism-fade-in-up-delay-2 {
+    animation: mimalismFadeInUp 0.8s ease-out 0.4s both;
+}
+
+.mimalism-fade-in-up-delay-3 {
+    animation: mimalismFadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* Mimalism-style contact info */
+.mimalism-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--mimalism-gray-700);
+}
+
+.mimalism-contact strong {
+    color: var(--mimalism-gray-900);
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+/* Mimalism-style links */
+.mimalism-link {
+    color: var(--mimalism-blue);
+    text-decoration: none;
+    transition: var(--mimalism-transition);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+}
+
+.mimalism-link:hover {
+    color: var(--mimalism-blue-dark);
+    border-bottom-color: var(--mimalism-blue);
+    transform: translateY(-1px);
+}
+
+.mimalism-link:focus {
+    outline: 2px solid var(--mimalism-blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Mimalism-style experience items */
+.mimalism-experience-item {
+    border-left: 3px solid var(--mimalism-blue);
+    padding-left: 24px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.mimalism-experience-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 9px;
+    height: 9px;
+    background: var(--mimalism-blue);
+    border-radius: 50%;
+}
+
+.mimalism-experience-item h4 {
+    color: var(--mimalism-gray-900);
+    margin-bottom: 4px;
+}
+
+.mimalism-experience-item .company {
+    color: var(--mimalism-gray-600);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.mimalism-experience-item p {
+    color: var(--mimalism-gray-700);
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mimalism-container {
+        padding: 0 16px;
+    }
+
+    .mimalism-card {
+        padding: 24px;
+    }
+
+    .mimalism-section {
+        margin-bottom: 60px;
+    }
+
+    .mimalism-header {
+        padding: 80px 0;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --mimalism-white: #1c1c1e;
+        --mimalism-gray-50: #2c2c2e;
+        --mimalism-gray-100: #3a3a3c;
+        --mimalism-gray-200: #48484a;
+        --mimalism-gray-300: #636366;
+        --mimalism-gray-400: #8e8e93;
+        --mimalism-gray-500: #aeaeb2;
+        --mimalism-gray-600: #c7c7cc;
+        --mimalism-gray-700: #d1d1d6;
+        --mimalism-gray-800: #e5e5ea;
+        --mimalism-gray-900: #f2f2f7;
+    }
+
+    .mimalism-header {
+        background: linear-gradient(
+            135deg,
+            var(--mimalism-gray-50) 0%,
+            var(--mimalism-white) 100%
+        );
+    }
+}

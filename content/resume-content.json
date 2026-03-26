@@ -1,0 +1,203 @@
+{
+  "personal": {
+    "name": "Evan Effie",
+    "titles": ["Lead Software Engineer", "Lead Support Engineer"]
+  },
+  "contacts": [
+    {
+      "type": "email",
+      "label": "Email",
+      "value": "evncnda@gmail.com",
+      "href": "mailto:evncnda@gmail.com"
+    },
+    {
+      "type": "email",
+      "label": "Email",
+      "value": "levaneffie@icloud.com",
+      "href": "mailto:levaneffie@icloud.com"
+    },
+    {
+      "type": "telegram",
+      "label": "Telegram",
+      "value": "t.me/jeffie_br",
+      "href": "https://t.me/jeffie_br"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "value": "github.com/iievan",
+      "href": "https://github.com/iievan"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/evan",
+      "href": "https://linkedin.com/in/evan"
+    }
+  ],
+  "skills": [
+    "Team Building",
+    "Resource CEO",
+    "Technical Leadership",
+    "Business Automation",
+    "Process Mapping",
+    "Workflow Automation",
+    "RPA",
+    "Support Metrics & KPIs",
+    "Knowledge Base",
+    "SLA Management",
+    "Ticket Systems",
+    "Incident Management",
+    "Problem Management",
+    "Escalation Management",
+    "Customer Satisfaction (CSAT)",
+    "Coaching & Mentoring",
+    "Performance Management",
+    "Stakeholder Management",
+    "n8n Automation",
+    "Support Analytics",
+    "Technical Writing",
+    "Cross-functional Communication",
+    "Systems Integration",
+    "Data Analytics",
+    "Operational Resilience",
+    "JavaScript",
+    "TypeScript",
+    "Vue code review",
+    "Nuxt code review",
+    "SwiftUI code review",
+    "Kotlin code review",
+    "Git & branches testing",
+    "Git building",
+    "Figma UI",
+    "SQL Database",
+    "Analysis business processes",
+    "Postman",
+    "JMeter",
+    "Volume / Load testing",
+    "Charles proxying",
+    "Firebase",
+    "Mixpanel",
+    "API testing",
+    "Payment Systems Integration",
+    "Backend testing",
+    "Frontend testings",
+    "CI/CD review",
+    "Microservices testing",
+    "Agile",
+    "Scrum",
+    "SDLC",
+    "Code Analysis",
+    "Database Architecture",
+    "Edge Testing",
+    "Functional Testing",
+    "Regression Testing",
+    "Integration Testing",
+    "Performance Testing",
+    "Smoke Testing",
+    "Test Cases",
+    "Test design",
+    "API Specs",
+    "Allure Reports",
+    "Fiddler proxying",
+    "DevTools testing",
+    "Android Studio debugging",
+    "SQL Injection",
+    "HTML testing",
+    "Rest API",
+    "GraphQL",
+    "SOAP",
+    "Github",
+    "Gitlab management",
+    "Building tech documentation",
+    "Web building / testing",
+    "iOS building / testing",
+    "Android building / testing"
+  ],
+  "experience": [
+    {
+      "id": "slowdive",
+      "title": "Head of Support & Automation Engineering",
+      "company": "Slowdive company",
+      "period": "2025 – now",
+      "location": "Malta",
+      "description": "Leads the Support & Automation Engineering function, building a scalable operating model where team efficiency, KPI transparency, and customer service quality are supported by strong technical infrastructure. Responsible for team development, support performance management, process and reporting automation, systems integration, data analytics, and the implementation of engineering practices that improve operational resilience and business effectiveness. Combines leadership with a hands-on engineering approach to transform complex operational challenges into scalable technical solutions with measurable business impact."
+    },
+    {
+      "id": "slowdive",
+      "title": "Lead Quality Assurance",
+      "company": "Slowdive company",
+      "period": "2024 – now",
+      "location": "Malta",
+      "description": "Improved QA processes that reduced onboarding time by 40% and production incidents by 70% through structured test design, analytics, and release quality control. Performed API testing, layout validation, and business logic verification using techniques such as equivalence partitioning, boundary value analysis, decision tables, and end-to-end scenario testing. Contributed to product stability across Vue.js, Go, SwiftUI, and Kotlin environments, including sandbox build deployment, Git-based delivery flows, and CI/CD-supported release processes."
+    },
+    {
+      "id": "reliz",
+      "title": "QA Senior Engineer",
+      "company": "Slowdive (part of Reliz)",
+      "period": "2024 – now",
+      "location": "Malta",
+      "description": "Delivered functional, regression, and integration testing across iOS, Android, and Web, ensuring strong coverage of critical user and business flows. Created and maintained test cases, checklists, and API-related documentation to support structured QA execution and release readiness. Improved API performance by 20% and strengthened product stability through performance testing, defect analysis, and transparent reporting for cross-functional stakeholders"
+    },
+    {
+      "id": "appfox",
+      "title": "QA Engineer Middle & Mobile Development",
+      "company": "Appfox",
+      "period": "2022 – 2024",
+      "location": "CIS",
+      "description": "Commanded a QA engineering dominion as a Middle expert in mobile and web app development, mastering quality assurance, development analysis, and database crafting with unrivaled precision. Wielded Postman, Charles, Android Studio, SQL Management Studio, DBeaver, and DevTools with epic skill, harnessing C#, JavaScript, PHP, HTML, Flutter/Dart, and massive databases to forge legendary projects like Premium House service, MMORPG admin panels, Unity io websites, mobile games, VR epics, and education apps."
+    },
+    {
+      "id": "yandex",
+      "title": "QA Engineer",
+      "company": "Yandex",
+      "period": "2020 – 2022",
+      "location": "CIS",
+      "description": "Provided quality assurance for Yandex web, desktop, and mobile products across key functional areas, including authorization, advertising, and logistics. Covered smoke, regression, and functional testing, supported test case development, and applied traffic analysis tools such as Fiddler and Charles to validate integrations and troubleshoot defects. Contributed to release quality and SDLC consistency in a large-scale ecosystem of iOS, Android, macOS, and Windows products, including Alice, Search, and Kinopoisk."
+    }
+  ],
+  "education": {
+    "institution": "Institute of Humanitarian Education and Information Technologies",
+    "education": "Secondary Vocational Education"
+  },
+  "projects": [
+    {
+      "id": "yoni-project",
+      "name": "Yoni: Women's Intimate Health",
+      "technologies": "Kotlin, SwiftUI, Go",
+      "year": "2026 - now",
+      "description": "A holistic approach to women's intimate health — muscle strengthening exercises and mindful practices for inner balance."
+    },
+    {
+      "id": "RiseUp: Men's Intimate Health",
+      "name": "RiseUp: Men's Intimate Health",
+      "technologies": "Kotlin, SwiftUI, Go",
+      "year": "2024 - now",
+      "description": "Guided workouts and mindfulness practices designed specifically for men's intimate health and daily wellbeing."
+    },
+    {
+      "id": "slowdive-project",
+      "name": "Meditation | Slowdive",
+      "technologies": "Vue.js, Nuxt.js, Go, Kotlin, SwiftUI",
+      "year": "2024 - now",
+      "description": "A full-featured super-app for psychological well-being, supported by all popular mobile operating systems and boasting thousands of users worldwide."
+    },
+    {
+      "id": "house-premium",
+      "name": "House Premium",
+      "technologies": "Kotlin, Go, React, SwiftUI",
+      "year": "2023",
+      "description": "Premium class housing management system through interaction with remote concierge services and server support."
+    }
+  ],
+  "sections": {
+    "contacts": "Контакты",
+    "skills": "Skills",
+    "experience": "Work Experience",
+    "education": "Education",
+    "projects": "Latest Project"
+  },
+  "footer": {
+    "copyright": "The information presented on the website is the intellectual property of the resource owner."
+  }
+}

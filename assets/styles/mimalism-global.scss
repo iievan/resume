@@ -1,0 +1,174 @@
+/* Global resume styles: layout, utilities, print */
+
+/* Layout */
+.mimalism-main {
+    padding: 80px 0;
+    background: var(--mimalism-gray-50);
+    min-height: 50vh;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
+.mt-2 {
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+.mimalism-text-muted {
+    color: var(--mimalism-text-muted);
+}
+
+/* Section Text Colors */
+.header-name {
+    color: var(--header-name-color);
+}
+
+.header-titles {
+    color: var(--header-titles-color);
+}
+
+.contacts-label {
+    color: var(--contacts-label-color);
+}
+
+.contacts-value {
+    color: var(--contacts-value-color);
+}
+
+.skills-label {
+    color: var(--skills-label-color);
+}
+
+.skills-tag {
+    color: var(--skills-tag-color);
+}
+
+.experience-label {
+    color: var(--experience-label-color);
+}
+
+.experience-title {
+    color: var(--experience-title-color);
+}
+
+.experience-company {
+    color: var(--experience-company-color);
+}
+
+.experience-location {
+    color: var(--experience-location-color);
+}
+
+.experience-period {
+    color: var(--experience-period-color);
+}
+
+.experience-description {
+    color: var(--experience-description-color);
+}
+
+.education-label {
+    color: var(--education-label-color);
+}
+
+.mimalism-experience-item .education-institution {
+    color: var(--education-institution-color);
+}
+
+.mimalism-experience-item .education-degree {
+    color: var(--education-institution-color) !important;
+}
+
+.projects-label {
+    color: var(--projects-label-color);
+}
+
+.projects-name {
+    color: var(--projects-name-color);
+}
+
+.projects-technologies {
+    color: var(--projects-technologies-color);
+}
+
+.projects-year {
+    color: var(--projects-year-color);
+}
+
+.projects-description {
+    color: var(--projects-description-color);
+}
+
+.footer-copyright {
+    color: var(--footer-copyright-color);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mimalism-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mimalism-gray-400);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--mimalism-gray-500);
+}
+
+/* Mimalism-style links */
+.mimalism-link {
+    color: var(--mimalism-blue);
+    text-decoration: none;
+    transition: var(--mimalism-transition);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+}
+
+.mimalism-link:hover {
+    color: var(--mimalism-blue-dark);
+    border-bottom-color: var(--mimalism-blue);
+    transform: translateY(-1px);
+}
+
+.mimalism-link:focus {
+    outline: 2px solid var(--mimalism-blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Focus styles for accessibility */
+.mimalism-btn:focus,
+.mimalism-skill-tag:focus {
+    outline: 2px solid var(--mimalism-blue);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .mimalism-header {
+        background: white !important;
+        color: black !important;
+    }
+
+    .mimalism-card {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+
+    .mimalism-main {
+        background: white !important;
+    }
+}

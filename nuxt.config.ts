@@ -4,6 +4,10 @@ import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  css: [
+    '~/assets/styles/mimalism-styles.css',
+    '~/assets/styles/mimalism-global.scss'
+  ],
   app: {
     head: {
       title: 'Quality is here 👇',
